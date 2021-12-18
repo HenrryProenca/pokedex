@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Pai de pokemon e personagem */
+.grupo {
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.pokemon {
+    height: 250px;
+    width: 250px;
+    border: 4px solid #000;
+    border-radius: 100%;
+    /*Alinhar pokebolas (filhos) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charmander {
+    background-color: coral;
+    background-image: url(./fire.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Quando usar Float? Nunca (antigo) >> Usar display: flex;
+    float: right;
+    */
+}
+
+.bulbasaur {
+    background-color: darkgreen;
+    background-image: url(./grass.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Quando usar Float? Nunca (antigo) >> Usar display: flex;
+    float: right;
+    */
+}
+
+.squirtle {
+    background-color: blue;
+    background-image: url(./water.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Quando usar Float? Nunca (antigo) >> Usar display: flex;
+    float: right;
+    */
+}
+
+.pokebola {
+    height: 50px;
+    width: 50px;
+    position: left;
+    position: top;
+}
+
+.mini {
+    height: 50px;
+    width: 50px;
+    /* Position no pai (Grupo) é relative */
+    position: absolute;
+    /* Sentido horário das propieades */
+    top: 120%;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.logo-topo {
+    display: flex;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1000%;
+
+}
